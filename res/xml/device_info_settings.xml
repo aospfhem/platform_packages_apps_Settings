@@ -17,7 +17,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
-
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status"
@@ -33,12 +32,6 @@
                 android:title="@string/manual">
             <intent android:action="android.settings.SHOW_MANUAL" />
         </PreferenceScreen>
-
-        <!-- Legal Information -->
-        <PreferenceScreen
-                android:key="container"
-                android:title="@string/legal_information"
-                android:fragment="com.android.settings.LegalSettings" />
 
         <PreferenceScreen
                 android:key="regulatory_info"
