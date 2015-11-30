@@ -71,6 +71,30 @@
                 />
 
     </dashboard-category>
+    
+    <!-- CUSTOMIZATIONS -->
+    <dashboard-category
+            android:id="@+id/noob_section"
+            android:title="@string/header_category_noob" >
+
+        <!-- ROM TWEAKS -->
+        <dashboard-tile
+                android:id="@+id/noob_settings"
+                android:title="@string/noob_settings_title"
+                android:fragment="com.android.settings.noob.NoobSettings" 
+        		android:icon="@drawable/ic_settings_noob" />
+		
+        <!-- SuperSU -->
+        <dashboard-tile
+                android:id="@+id/supersu_settings"
+                android:icon="@drawable/ic_settings_supersu"
+                android:title="@string/supersu_title">
+                <intent
+                    android:action="android.intent.action.MAIN"
+                    android:targetPackage="eu.chainfire.supersu"
+                    android:targetClass="eu.chainfire.supersu.MainActivity" />	
+        </dashboard-tile>
+    </dashboard-category>
 
     <!-- DEVICE -->
     <dashboard-category
@@ -247,17 +271,6 @@
                 android:fragment="com.android.settings.DevelopmentSettings"
                 android:icon="@drawable/ic_settings_development"
                 />
-
-        <!-- SuperSU -->
-        <dashboard-tile
-                android:id="@+id/supersu_settings"
-                android:icon="@drawable/ic_settings_supersu"
-                android:title="@string/supersu_title">
-                <intent
-                    android:action="android.intent.action.MAIN"
-                    android:targetPackage="eu.chainfire.supersu"
-                    android:targetClass="eu.chainfire.supersu.MainActivity" />
-        </dashboard-tile>
 
         <!-- About Device -->
         <dashboard-tile

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/noob_settings_title" >
+
+    <PreferenceCategory
+        android:key="category_noob_personalization"
+        android:title="@string/noob_menu_personalizaton" >
+
+    <PreferenceScreen
+        android:key="gestures_general_category"
+        android:fragment="com.android.settings.noob.GestureSettings"
+        android:title="@string/gestures_title" />
+
+</PreferenceCategory>
+</PreferenceScreen>
